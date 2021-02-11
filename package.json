@@ -1,0 +1,28 @@
+{
+  "name": "entrega1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"postcss css/tailwind.css -o public/css/style.css",
+    "dev":"postcss css/tailwind.css -o public/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dasafodev/web-entrega1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dasafodev/web-entrega1/issues"
+  },
+  "homepage": "https://github.com/dasafodev/web-entrega1#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
+  }
+}

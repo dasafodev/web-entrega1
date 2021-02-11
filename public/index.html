@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="css/style.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="css/style.css" /></noscript>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dasafodev</title>
+  </head>
+  <body>
+    <nav
+      class="container px-4 sm:px-8 mx-auto flex justify-between items-center h-16 text-white text-gray-500"
+    >
+      <img
+        class="h-10"
+        src="https://drive.google.com/uc?export=view&id=1L2gswTmj6dPc73XzGAtCx654z_yp9J6a"
+        alt=""
+      />
+
+      <section>
+        <a href="#welcome">
+          <button
+            class="mx-4 px-2 py-1 hidden md:inline button-focus_menu rounded-md"
+          >
+            About
+          </button>
+        </a>
+        <a href="#knowledge">
+          <button
+            class="mx-4 px-2 py-1 hidden md:inline button-focus_menu rounded-md"
+          >
+            What I do?
+          </button>
+        </a>
+        <a href="#my-work">
+          <button
+            class="mx-4 px-2 py-1 hidden md:inline button-focus_menu rounded-md"
+          >
+            My Work
+          </button>
+        </a>
+
+        <a href="#education">
+          <button
+            class="mx-4 px-2 py-1 hidden md:inline button-focus_menu rounded-md"
+          >
+            My Education
+          </button>
+        </a>
+
+        <button
+          class="mx-4 px-2 py-1 hidden md:inline button-focus_menu rounded-md"
+          href="#contact"
+        >
+          Contact
+        </button>
+        <div class="block md:hidden">
+          <button
+            id="nav-toggle"
+            class="flex items-center px-3 py-2 border rounded text-grey border-grey-dark hover:text-white hover:border-white"
+          >
+            <svg
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+      </section>
+    </nav>
+    <main class="container md px-4 sm:px-8 mx-auto">
+      <section
+        id="welcome"
+        class="h-screen flex flex-col sm:flex-row text-center sm:text-left items-center justify-between"
+      >
+        <article class="sm:w-3/5 mt-20 sm:mt-0 sm:-mt-20">
+          <h3 class="text-2xl">
+            Hi, my name is <strong>Santiago Forero</strong>
+          </h3>
+          <article class="w-3/4 p-4 mx-auto sm:hidden">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1HwsyvRuIeQ7biJ57b04oaE6LLnwUvwPF"
+              alt=""
+              srcset=""
+            />
+          </article>
+          <p
+            class="my-10 text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl"
+          >
+            I'm Web and Mobile Developer. Entrepreneur dedicated to improve and
+            adapt to the needs of the tech ecosystem.
+          </p>
+          <a href="#my-work">
+            <button class="w-32 h-10 border-2 border-red-brand rounded-md mr-4">
+              My Work
+            </button>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/dasafodev/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button
+              class="w-32 h-10 text-white border-2 border-red-brand bg-red-brand rounded-md button-focus"
+            >
+              Let's Talk
+            </button>
+          </a>
+        </article>
+        <article class="w-2/5 -mt-20 p-8 hidden sm:inline">
+          <img
+            src="https://drive.google.com/uc?export=view&id=1HwsyvRuIeQ7biJ57b04oaE6LLnwUvwPF"
+            alt=""
+            srcset=""
+          />
+        </article>
+      </section>
+
+      <section id="knowledge" class="knowledge">
+        <h2
+          class="text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl mb-8 font-semibold text-center"
+        >
+          What I do?
+        </h2>
+        <section
+          class="flex flex-col sm:flex-row items-center sm:justify-around"
+        >
+          <div class="square">
+            <div class="square-content">
+              <img
+                class="h-3/4 sm:h-2/4 xl:h-3/4"
+                src="https://drive.google.com/uc?export=view&id=1lzpfnMvovRHKpZEiDUH0OfxYjuySluAT"
+                alt=""
+              />
+              <h3 class="text-sm sm:text-xs lg:text-base text-center">
+                Frontend Development
+              </h3>
+            </div>
+          </div>
+          <div class="square">
+            <div class="square-content">
+              <img
+                class="h-3/4 sm:h-2/4 xl:h-3/4"
+                src="https://drive.google.com/uc?export=view&id=1ucFni1NngIuEiHuAk2YSvZPVEC_jTVoZ"
+                alt=""
+              />
+              <h3 class="text-sm sm:text-xs lg:text-base text-center">
+                Mobile development
+              </h3>
+            </div>
+          </div>
+          <div class="square">
+            <div class="square-content">
+              <img
+                class="h-3/4 sm:h-2/4 xl:h-3/4"
+                src="https://drive.google.com/uc?export=view&id=1OrpGLZWcYX1YbZOwHVpCnUz3yjcm1OME"
+                alt=""
+              />
+              <h3 class="text-sm sm:text-xs lg:text-base text-center">
+                Backend development
+              </h3>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section id="my-work" class="my-16">
+        <h2
+          class="text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-center mb-8"
+        >
+          My work
+        </h2>
+        <article
+          class="h-80px flex flex-col sm:flex-row justify-around items-center my-20"
+        >
+          <div class="sm:2/5 lg:w-2/5">
+            <h3
+              class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl mb-7 font-medium"
+            >
+              Freelancer
+            </h3>
+            <p class="sm:text-sm md:text-lg text-justify">
+              For the last 2 years I have been working as a freelancer making
+              web pages of all kinds such as: Landingpage, e-commerce and
+              administrative. In these pages I have worked with frameworks like
+              Angular and React. Also, for the e-commerce I worked with
+              wordpress.
+            </p>
+            <section class="mt-2">
+              <a
+                href="https://www.astronomic.com.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button
+                  class="bg-red-brand text-white px-2 py-1 rounded-full text-sm mr-1 button-focus"
+                >
+                  Astronomic
+                </button>
+              </a>
+              <a
+                href="http://designlighting.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button
+                  class="bg-red-brand text-white px-2 py-1 rounded-full text-sm mr-1 button-focus"
+                >
+                  Design L
+                </button>
+              </a>
+              <a
+                href="https://kuppo.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button
+                  class="bg-red-brand text-white px-2 py-1 rounded-full text-sm mr-1 button-focus"
+                >
+                  Kuppo
+                </button>
+              </a>
+            </section>
+          </div>
+          <img
+            class="sm:w-1/3 my-12 sm:my-0"
+            src="https://drive.google.com/uc?export=view&id=1zdpZa8HeY0sZHcKtnSiP6wn3p_AL2r1G"
+            alt=""
+          />
+        </article>
+        <article
+          class="h-80px flex flex-col sm:flex-row justify-around items-center my-8"
+        >
+          <div class="sm:2/5 lg:w-2/5">
+            <h3
+              class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl mb-7 font-medium"
+            >
+              Kuppo
+            </h3>
+            <p class="sm:text-sm md:text-lg text-justify">
+              I am co-founder and mobile developer of the Kuppo application,
+              which was winner of the call for code in Latin America and world
+              finalist in the world university version.
+            </p>
+            <section>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.phronesis.kuppo"
+                target="_blank"
+              >
+                <button
+                  class="bg-red-brand text-white px-2 py-1 rounded-full text-sm mr-1 button-focus"
+                >
+                  Android
+                </button>
+              </a>
+              <a
+                href="https://apps.apple.com/us/app/kuppo-col/id1537691972"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button
+                  class="bg-red-brand text-white px-2 py-1 rounded-full text-sm mr-1 button-focus"
+                >
+                  IOS
+                </button>
+              </a>
+            </section>
+          </div>
+          <img
+            class="sm:w-1/3 my-12 sm:my-0"
+            src="https://drive.google.com/uc?export=view&id=17-YVVjEJmdSEsoJlpIEY5_kviivt4ppt"
+            alt=""
+          />
+        </article>
+      </section>
+
+      <section id="education">
+        <h2
+          class="text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-center mb-8"
+        >
+          My education
+        </h2>
+        <section class="flex justify-around items-center flex-col sm:flex-row">
+          <article
+            class="w-3/5 mb-12 sm:mb-0 sm:w-1/6 flex items-center flex-col"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/University_of_Los_Andes_logo.svg/800px-University_of_Los_Andes_logo.svg.png"
+              alt=""
+            />
+            <h4 class="text-xl text-center font-bold mt-2">
+              Computer and systems engineering
+            </h4>
+            <h3 class="text-center">Los Andes University</h3>
+          </article>
+          <article
+            class="w-3/5 mb-12 sm:mb-0 sm:w-1/6 flex items-center flex-col"
+          >
+            <img
+              src="https://juancitopena.github.io/Las-Mejores-Web-Para-Aprender/assets/imagenes/platzi.png"
+              alt=""
+            />
+            <h4 class="text-xl text-center font-bold mt-2">
+              Frontend Developer
+            </h4>
+            <h3>Platzi Master</h3>
+          </article>
+          <article
+            class="w-3/5 sm:w-1/6 flex items-center flex-col mb-12 sm:mb-0"
+          >
+            <img
+              src="https://images.ctfassets.net/q33z48p65a6w/1ciJXQwQjfgRWGcpyI1Oqp/dff760d330247aeb091a022c53184728/4._Partner_Icons_-_Udemy.png"
+              alt=""
+            />
+            <h4 class="text-xl text-center font-bold mt-2">
+              Flutter Developer
+            </h4>
+            <h3>Udemy</h3>
+          </article>
+        </section>
+      </section>
+      <section class=" sm:mt-20 container mx-auto ">
+        <h2
+          class="text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-center mb-24"
+        >
+          My Interests
+        </h2>
+        <div class="flex justify-around md:flex-row flex-col items-center md:items-start ">
+          <article class="flex flex-col w-11/12 sm:w-1/2 items-center mb-12">
+            <img
+              class="w-11/12 sm:w-2/6 mb-2"
+              src="https://www.elquintobeatle.com/wp-content/uploads/2019/08/bad-bunny-x-100pre-1.jpeg"
+              alt=""
+            />
+            <h3 class="mb-2">Otra noche en miami</h3>
+            <audio controls>
+              <source
+                src="https://docs.google.com/uc?export=download&id=1xXlsuQwhCxwIl3uIP-DntzcHGPeZbEYd"
+                type="audio/mpeg"
+              />
+            </audio>
+          </article>
+          <article class="flex flex-col w-11/12 sm:w-1/2  items-center mb-28 sm:mb-56 ">
+            <iframe
+            width="300px"
+            height="250px"
+              src="https://www.youtube.com/embed/7pynaH-PPCA"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <h3>Yo visto asi - Bad Bunny</h3>
+          </article>
+        </div>
+      </section>
+    </main>
+    <section class="relative">
+      <img
+        class="h-44 object-cover sm:h-auto sm:w-screen shadow-xl"
+        src="https://drive.google.com/uc?export=view&id=1OX1o3hXsEWQZcKm6U7WzkATnzO7NtEH4"
+        alt=""
+      />
+      <a
+        href="https://www.linkedin.com/in/dasafodev/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button
+          class="absolute absolute-centered bg-white px-12 shadow-md py-3 rounded-md button-focus_white"
+        >
+          Let's Talk
+        </button>
+      </a>
+    </section>
+    <footer id="contact">
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <a href="https://github.com/dasafodev"
+                ><img
+                  src="https://img.icons8.com/doodle/48/000000/github--v1.png"
+                  alt="github"
+                />
+              </a>
+            </td>
+            <td>
+              <a href="https://twitter.com/dasafodev"
+                ><img
+                  src="https://img.icons8.com/doodle/48/000000/twitter.png"
+                  alt="twitter"
+                />
+              </a>
+            </td>
+            <td>
+              <a href="https://www.linkedin.com/in/dasafodev/"
+                ><img
+                  src="https://img.icons8.com/doodle/48/000000/linkedin--v2.png"
+                  alt="linkedin"
+              /></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </footer>
+  </body>
+</html>
