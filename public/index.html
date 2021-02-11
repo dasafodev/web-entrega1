@@ -58,12 +58,14 @@
           </button>
         </a>
 
-        <button
-          class="mx-4 px-2 py-1 hidden md:inline button-focus_menu rounded-md"
-          href="#contact"
-        >
-          Contact
-        </button>
+        <a href="#contact">
+          <button
+            class="mx-4 px-2 py-1 hidden md:inline button-focus_menu rounded-md"
+          >
+            Contact
+          </button>
+        </a>
+
         <div class="block md:hidden">
           <button
             id="nav-toggle"
@@ -332,13 +334,15 @@
           </article>
         </section>
       </section>
-      <section class=" sm:mt-20 container mx-auto ">
+      <section class="sm:mt-20 container mx-auto">
         <h2
           class="text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-center mb-24"
         >
           My Interests
         </h2>
-        <div class="flex justify-around md:flex-row flex-col items-center md:items-start ">
+        <div
+          class="flex justify-around md:flex-row flex-col items-center md:items-start"
+        >
           <article class="flex flex-col w-11/12 sm:w-1/2 items-center mb-12">
             <img
               class="w-11/12 sm:w-2/6 mb-2"
@@ -353,10 +357,12 @@
               />
             </audio>
           </article>
-          <article class="flex flex-col w-11/12 sm:w-1/2  items-center mb-28 sm:mb-56 ">
+          <article
+            class="flex flex-col w-11/12 sm:w-1/2 items-center mb-28 sm:mb-56"
+          >
             <iframe
-            width="300px"
-            height="250px"
+              width="300px"
+              height="250px"
               src="https://www.youtube.com/embed/7pynaH-PPCA"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -367,7 +373,7 @@
         </div>
       </section>
     </main>
-    <section class="relative">
+    <section class="relative mb-20">
       <img
         class="h-44 object-cover sm:h-auto sm:w-screen shadow-xl"
         src="https://drive.google.com/uc?export=view&id=1OX1o3hXsEWQZcKm6U7WzkATnzO7NtEH4"
@@ -385,36 +391,24 @@
         </button>
       </a>
     </section>
-    <footer id="contact">
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              <a href="https://github.com/dasafodev"
-                ><img
-                  src="https://img.icons8.com/doodle/48/000000/github--v1.png"
-                  alt="github"
-                />
-              </a>
-            </td>
-            <td>
-              <a href="https://twitter.com/dasafodev"
-                ><img
-                  src="https://img.icons8.com/doodle/48/000000/twitter.png"
-                  alt="twitter"
-                />
-              </a>
-            </td>
-            <td>
-              <a href="https://www.linkedin.com/in/dasafodev/"
-                ><img
-                  src="https://img.icons8.com/doodle/48/000000/linkedin--v2.png"
-                  alt="linkedin"
-              /></a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <footer id="contact" class="flex justify-end fixed bottom-0 right-0">
+      <a href="https://github.com/dasafodev"
+        ><img
+          src="https://img.icons8.com/doodle/48/000000/github--v1.png"
+          alt="github"
+        />
+      </a>
+      <a href="https://twitter.com/dasafodev"
+        ><img
+          src="https://img.icons8.com/doodle/48/000000/twitter.png"
+          alt="twitter"
+        />
+      </a>
+      <a href="https://www.linkedin.com/in/dasafodev/"
+        ><img
+          src="https://img.icons8.com/doodle/48/000000/linkedin--v2.png"
+          alt="linkedin"
+      /></a>
     </footer>
   </body>
 </html>
