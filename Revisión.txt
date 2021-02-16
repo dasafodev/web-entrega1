@@ -1,0 +1,5 @@
+El codigo esta organizado, tanto en html como en css.
+La pagina es bastante agradable a la vista.
+Hay un toal de 26 errores en validator. La mayoria son que se utiliza button como un elemento decendiente de a, lo cual no se puede, normalmente se utilizaria button como clase del a.
+Otros era que en el tamaño se utilizaron valores de width y height con px siendo que es inecesaria la unidad porque los toma como valores de pixeles, seria necesario si fuera en el css.
+Una warning que se mostro mucho fue que se crearon diferentes section sin un encabezado, siendo que para eso hubiera sido mejor manejar div.
