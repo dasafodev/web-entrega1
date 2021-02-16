@@ -1,3 +1,11 @@
+<!--Comentarios Generales: El código es legible (tanto el html como el css), las reglas en css están claramente nombradas tiene secciones lógicas claramente diferenciables.
+    El código presentaba algunos errores de validación. La mayoría de estos eran el tener a elementos 'button' como descendientes de elementos 'a', lo cual es un error 
+    según el validador. El otro error más prominente era el uso de elementos 'article' y 'section' sin ningún header, por lo que estos elementos se cambiaron por 'div'. Además de eso,
+    otros errores que se presenciaron frecuentemente era la falta de texto en los atributos 'alt' y el uso del atributo 'srcset' y dejarlo vacío (se le dió un texto que se cree 
+    pertinente a los atributos 'alt' y se eliminaron los atributos 'srcset'). Finalmente se presenció una instancia de uso de 'px' en el valor de los atributos 'width' y 'height'
+    en un 'iframe' y también un error en el botón de 'Contact' en la barra de navegación que no dejaba que al hacer click llevara al punto en la página.
+    La página en sí tiene una navegación consistente y el diseño en sí de la página es bueno: la tipografía y los colores son legibles y consistentes, hace buen uso de 
+    hace buen uso de secciones, bloques e imágenes.-->
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -24,45 +32,44 @@
       <img
         class="h-10"
         src="https://drive.google.com/uc?export=view&id=1L2gswTmj6dPc73XzGAtCx654z_yp9J6a"
-        alt=""
-      />
+        alt="My logo"
+      /><!--Se agregó texto al atributo alt-->
 
-      <section>
-        <a href="#welcome">
-          <button
-            class="mx-4 px-2 py-1 hidden md:inline button-focus_menu rounded-md"
-          >
-            About
-          </button>
-        </a>
-        <a href="#knowledge">
-          <button
-            class="mx-4 px-2 py-1 hidden md:inline button-focus_menu rounded-md"
-          >
-            What I do?
-          </button>
-        </a>
-        <a href="#my-work">
-          <button
-            class="mx-4 px-2 py-1 hidden md:inline button-focus_menu rounded-md"
-          >
-            My Work
-          </button>
-        </a>
-
-        <a href="#education">
-          <button
-            class="mx-4 px-2 py-1 hidden md:inline button-focus_menu rounded-md"
-          >
-            My Education
-          </button>
-        </a>
+      <div>
+        <!--Se cambió de section a div, pues section necesita de algún header por el validador-->
+        <button
+          class="mx-4 px-2 py-1 hidden md:inline button-focus_menu rounded-md"
+        >
+          <a href="#welcome">About</a
+          ><!--El elemento button no debe ser un descendiente del elemento a.-->
+        </button>
 
         <button
           class="mx-4 px-2 py-1 hidden md:inline button-focus_menu rounded-md"
-          href="#contact"
         >
-          Contact
+          <a href="#knowledge">What I do?</a
+          ><!--El elemento button no debe ser un descendiente del elemento a.-->
+        </button>
+
+        <button
+          class="mx-4 px-2 py-1 hidden md:inline button-focus_menu rounded-md"
+        >
+          <a href="#my-work">My Work</a
+          ><!--El elemento button no debe ser un descendiente del elemento a.-->
+        </button>
+
+        <button
+          class="mx-4 px-2 py-1 hidden md:inline button-focus_menu rounded-md"
+        >
+          <a href="#education">My Education</a
+          ><!--El elemento button no debe ser un descendiente del elemento a.-->
+        </button>
+
+        <button
+          class="mx-4 px-2 py-1 hidden md:inline button-focus_menu rounded-md"
+        >
+          <a href="#contact">Contact</a>
+          <!--Se arregló el botón para que lleve correctamente a la sección-->
         </button>
         <div class="block md:hidden">
           <button
@@ -79,55 +86,59 @@
             </svg>
           </button>
         </div>
-      </section>
+      </div>
     </nav>
     <main class="container md px-4 sm:px-8 mx-auto">
-      <section
+      <div
         id="welcome"
         class="h-screen flex flex-col sm:flex-row text-center sm:text-left items-center justify-between"
       >
+        <!--Se cambió por div pues section necesita un header por el validador-->
+
         <article class="sm:w-3/5 mt-20 sm:mt-0 sm:-mt-20">
           <h3 class="text-2xl">
             Hi, my name is <strong>Santiago Forero</strong>
           </h3>
-          <article class="w-3/4 p-4 mx-auto sm:hidden">
+          <div class="w-3/4 p-4 mx-auto sm:hidden">
+            <!--Se cambió de article a div, pues el article necesita de un header por el validador-->
             <img
               src="https://drive.google.com/uc?export=view&id=1HwsyvRuIeQ7biJ57b04oaE6LLnwUvwPF"
-              alt=""
-              srcset=""
+              alt="My photo"
             />
-          </article>
+            <!--Se agregó un valor al atributo alt. Se eliminó el atributo srcset, pues estaba vacío y no aportaba nada.-->
+          </div>
           <p
             class="my-10 text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl"
           >
             I'm Web and Mobile Developer. Entrepreneur dedicated to improve and
             adapt to the needs of the tech ecosystem.
           </p>
-          <a href="#my-work">
-            <button class="w-32 h-10 border-2 border-red-brand rounded-md mr-4">
-              My Work
-            </button>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/dasafodev/"
-            target="_blank"
-            rel="noopener noreferrer"
+
+          <button class="w-32 h-10 border-2 border-red-brand rounded-md mr-4">
+            <a href="#my-work">My Work</a>
+          </button>
+          <!--El elemento button no debe ser un descendiente del elemento a.-->
+
+          <button
+            class="w-32 h-10 text-white border-2 border-red-brand bg-red-brand rounded-md button-focus"
           >
-            <button
-              class="w-32 h-10 text-white border-2 border-red-brand bg-red-brand rounded-md button-focus"
+            <a
+              href="https://www.linkedin.com/in/dasafodev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Let's Talk</a
             >
-              Let's Talk
-            </button>
-          </a>
+          </button>
         </article>
-        <article class="w-2/5 -mt-20 p-8 hidden sm:inline">
+        <div class="w-2/5 -mt-20 p-8 hidden sm:inline">
+          <!--Se cambió de article a div, pues el article necesita de un header por el validador-->
           <img
             src="https://drive.google.com/uc?export=view&id=1HwsyvRuIeQ7biJ57b04oaE6LLnwUvwPF"
-            alt=""
-            srcset=""
+            alt="My photo"
           />
-        </article>
-      </section>
+        </div>
+        <!--Se agregó un valor al atributo alt. Se eliminó el atributo srcset, pues estaba vacío y no aportaba nada.-->
+      </div>
 
       <section id="knowledge" class="knowledge">
         <h2
@@ -143,8 +154,8 @@
               <img
                 class="h-3/4 sm:h-2/4 xl:h-3/4"
                 src="https://drive.google.com/uc?export=view&id=1lzpfnMvovRHKpZEiDUH0OfxYjuySluAT"
-                alt=""
-              />
+                alt="Frontend development logo"
+              /><!--Se agregó texto al atributo alt-->
               <h3 class="text-sm sm:text-xs lg:text-base text-center">
                 Frontend Development
               </h3>
@@ -155,8 +166,8 @@
               <img
                 class="h-3/4 sm:h-2/4 xl:h-3/4"
                 src="https://drive.google.com/uc?export=view&id=1ucFni1NngIuEiHuAk2YSvZPVEC_jTVoZ"
-                alt=""
-              />
+                alt="Mobile development logo"
+              /><!--Se agregó texto al atributo alt-->
               <h3 class="text-sm sm:text-xs lg:text-base text-center">
                 Mobile development
               </h3>
@@ -167,8 +178,8 @@
               <img
                 class="h-3/4 sm:h-2/4 xl:h-3/4"
                 src="https://drive.google.com/uc?export=view&id=1OrpGLZWcYX1YbZOwHVpCnUz3yjcm1OME"
-                alt=""
-              />
+                alt="Backend development logo"
+              /><!--Se agregó texto al atributo alt-->
               <h3 class="text-sm sm:text-xs lg:text-base text-center">
                 Backend development
               </h3>
@@ -199,47 +210,48 @@
               Angular and React. Also, for the e-commerce I worked with
               wordpress.
             </p>
-            <section class="mt-2">
-              <a
-                href="https://www.astronomic.com.co/"
-                target="_blank"
-                rel="noopener noreferrer"
+            <div class="mt-2">
+              <!--Se cambió por div pues section necesita un header por el validador-->
+
+              <button
+                class="bg-red-brand text-white px-2 py-1 rounded-full text-sm mr-1 button-focus"
               >
-                <button
-                  class="bg-red-brand text-white px-2 py-1 rounded-full text-sm mr-1 button-focus"
-                >
-                  Astronomic
-                </button>
-              </a>
-              <a
-                href="http://designlighting.co/"
-                target="_blank"
-                rel="noopener noreferrer"
+                <a
+                  href="https://www.astronomic.com.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Astronomic</a
+                ><!--El elemento button no debe ser un descendiente del elemento a.-->
+              </button>
+
+              <button
+                class="bg-red-brand text-white px-2 py-1 rounded-full text-sm mr-1 button-focus"
               >
-                <button
-                  class="bg-red-brand text-white px-2 py-1 rounded-full text-sm mr-1 button-focus"
-                >
-                  Design L
-                </button>
-              </a>
-              <a
-                href="https://kuppo.co/"
-                target="_blank"
-                rel="noopener noreferrer"
+                <a
+                  href="http://designlighting.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Design L</a
+                ><!--El elemento button no debe ser un descendiente del elemento a.-->
+              </button>
+
+              <button
+                class="bg-red-brand text-white px-2 py-1 rounded-full text-sm mr-1 button-focus"
               >
-                <button
-                  class="bg-red-brand text-white px-2 py-1 rounded-full text-sm mr-1 button-focus"
-                >
-                  Kuppo
-                </button>
-              </a>
-            </section>
+                <a
+                  href="https://kuppo.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Kuppo</a
+                ><!--El elemento button no debe ser un descendiente del elemento a.-->
+              </button>
+            </div>
           </div>
           <img
             class="sm:w-1/3 my-12 sm:my-0"
             src="https://drive.google.com/uc?export=view&id=1zdpZa8HeY0sZHcKtnSiP6wn3p_AL2r1G"
-            alt=""
-          />
+            alt="Preview of some of the pages I've made"
+          /><!--Se agregó texto al atributo alt-->
         </article>
         <article
           class="h-80px flex flex-col sm:flex-row justify-around items-center my-8"
@@ -255,35 +267,36 @@
               which was winner of the call for code in Latin America and world
               finalist in the world university version.
             </p>
-            <section>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.phronesis.kuppo"
-                target="_blank"
+            <div>
+              <!--Se cambió por div pues section necesita un header por el validador-->
+
+              <button
+                class="bg-red-brand text-white px-2 py-1 rounded-full text-sm mr-1 button-focus"
               >
-                <button
-                  class="bg-red-brand text-white px-2 py-1 rounded-full text-sm mr-1 button-focus"
-                >
-                  Android
-                </button>
-              </a>
-              <a
-                href="https://apps.apple.com/us/app/kuppo-col/id1537691972"
-                target="_blank"
-                rel="noopener noreferrer"
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.phronesis.kuppo"
+                  target="_blank"
+                  >Android</a
+                ><!--El elemento button no debe ser un descendiente del elemento a.-->
+              </button>
+
+              <button
+                class="bg-red-brand text-white px-2 py-1 rounded-full text-sm mr-1 button-focus"
               >
-                <button
-                  class="bg-red-brand text-white px-2 py-1 rounded-full text-sm mr-1 button-focus"
-                >
-                  IOS
-                </button>
-              </a>
-            </section>
+                <a
+                  href="https://apps.apple.com/us/app/kuppo-col/id1537691972"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >IOS</a
+                ><!--El elemento button no debe ser un descendiente del elemento a.-->
+              </button>
+            </div>
           </div>
           <img
             class="sm:w-1/3 my-12 sm:my-0"
             src="https://drive.google.com/uc?export=view&id=17-YVVjEJmdSEsoJlpIEY5_kviivt4ppt"
-            alt=""
-          />
+            alt="Kuppo app preview"
+          /><!--Se agregó texto al atributo alt-->
         </article>
       </section>
 
@@ -293,14 +306,15 @@
         >
           My education
         </h2>
-        <section class="flex justify-around items-center flex-col sm:flex-row">
+        <div class="flex justify-around items-center flex-col sm:flex-row">
+          <!--Se cambió por div pues section necesita un header por el validador-->
           <article
             class="w-3/5 mb-12 sm:mb-0 sm:w-1/6 flex items-center flex-col"
           >
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/University_of_Los_Andes_logo.svg/800px-University_of_Los_Andes_logo.svg.png"
-              alt=""
-            />
+              alt="Logo of Universidad de los Andes"
+            /><!--Se agregó texto al atributo alt-->
             <h4 class="text-xl text-center font-bold mt-2">
               Computer and systems engineering
             </h4>
@@ -311,8 +325,8 @@
           >
             <img
               src="https://juancitopena.github.io/Las-Mejores-Web-Para-Aprender/assets/imagenes/platzi.png"
-              alt=""
-            />
+              alt="Platzi logo"
+            /><!--Se agregó texto al atributo alt-->
             <h4 class="text-xl text-center font-bold mt-2">
               Frontend Developer
             </h4>
@@ -323,28 +337,30 @@
           >
             <img
               src="https://images.ctfassets.net/q33z48p65a6w/1ciJXQwQjfgRWGcpyI1Oqp/dff760d330247aeb091a022c53184728/4._Partner_Icons_-_Udemy.png"
-              alt=""
-            />
+              alt="Udemy logo"
+            /><!--Se agregó texto al atributo alt-->
             <h4 class="text-xl text-center font-bold mt-2">
               Flutter Developer
             </h4>
             <h3>Udemy</h3>
           </article>
-        </section>
+        </div>
       </section>
-      <section class=" sm:mt-20 container mx-auto ">
+      <section class="sm:mt-20 container mx-auto">
         <h2
           class="text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-center mb-24"
         >
           My Interests
         </h2>
-        <div class="flex justify-around md:flex-row flex-col items-center md:items-start ">
+        <div
+          class="flex justify-around md:flex-row flex-col items-center md:items-start"
+        >
           <article class="flex flex-col w-11/12 sm:w-1/2 items-center mb-12">
             <img
               class="w-11/12 sm:w-2/6 mb-2"
               src="https://www.elquintobeatle.com/wp-content/uploads/2019/08/bad-bunny-x-100pre-1.jpeg"
-              alt=""
-            />
+              alt="Bad Bunny x100pre album cover"
+            /><!--Se agregó texto al atributo alt-->
             <h3 class="mb-2">Otra noche en miami</h3>
             <audio controls>
               <source
@@ -353,38 +369,41 @@
               />
             </audio>
           </article>
-          <article class="flex flex-col w-11/12 sm:w-1/2  items-center mb-28 sm:mb-56 ">
+          <article
+            class="flex flex-col w-11/12 sm:w-1/2 items-center mb-28 sm:mb-56"
+          >
             <iframe
-            width="300px"
-            height="250px"
+              width="300"
+              height="250"
               src="https://www.youtube.com/embed/7pynaH-PPCA"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
-            ></iframe>
+            ></iframe
+            ><!--Se quitó el px de los atributos width y height pues no son necesarios según el validador. Se eliminó el atributo frameborder pues no está haciendo nada y está obsoleto-->
             <h3>Yo visto asi - Bad Bunny</h3>
           </article>
         </div>
       </section>
     </main>
-    <section class="relative">
+    <div class="relative">
+      <!--Se cambió por div pues section necesita un header por el validador-->
       <img
         class="h-44 object-cover sm:h-auto sm:w-screen shadow-xl"
         src="https://drive.google.com/uc?export=view&id=1OX1o3hXsEWQZcKm6U7WzkATnzO7NtEH4"
-        alt=""
-      />
-      <a
-        href="https://www.linkedin.com/in/dasafodev/"
-        target="_blank"
-        rel="noopener noreferrer"
+        alt="Banner of some of the web pages that I've made"
+      /><!--Se agregó texto al atributo alt-->
+
+      <button
+        class="absolute absolute-centered bg-white px-12 shadow-md py-3 rounded-md button-focus_white"
       >
-        <button
-          class="absolute absolute-centered bg-white px-12 shadow-md py-3 rounded-md button-focus_white"
-        >
-          Let's Talk
-        </button>
-      </a>
-    </section>
+        <a
+          href="https://www.linkedin.com/in/dasafodev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Let's Talk</a
+        ><!--El elemento button no debe ser un descendiente del elemento a.-->
+      </button>
+    </div>
     <footer id="contact">
       <table>
         <tbody>
